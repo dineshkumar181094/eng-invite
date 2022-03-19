@@ -188,14 +188,18 @@
   });
 }(jQuery));
 // $('html,body').animate({scrollTop: document.body.scrollHeight},"8000");
-
+// scrool logic starts
 $(document).ready(function(){
-  $('body,html').animate({scrollTop: document.body.scrollHeight - (window.screen.height)}, 22000);
+  $('body,html').animate({scrollTop: document.body.scrollHeight + 150 - (window.screen.height)}, 23000);
 });
-// $('.no-zoom').bind('touchend', function(e) {
-//   e.preventDefault();
-//   // Add your code here. 
-//   $(this).click();
-//   // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
-// })
+// scrool logic ends
 
+// window.onload = function () {
+//   document.getElementById("my_audio").play();
+// }
+$('.no-zoom').bind('touchend', function(e) {
+  e.preventDefault();
+  // Add your code here. 
+  $(this).click();
+  // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
+})
