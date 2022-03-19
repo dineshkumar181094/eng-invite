@@ -32,7 +32,15 @@
 </head>
 
 <body>
+    <audio id="my_audio" controls loop="false" style="display:none">
+        <source src="/audio/music_1.mp3" type="audio/mpeg">
+    </audio>
 
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("my_audio").play();
+        }
+    </script>
 
     <!-- Header -->
     <header>
@@ -194,9 +202,7 @@
 
 
     </div>
-    <audio controls autoplay loop hidden=true>
-        <source src="audio/music.mp3" type="audio/mpeg">
-    </audio>
+
 </body>
 
 

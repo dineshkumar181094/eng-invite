@@ -189,12 +189,13 @@
 }(jQuery));
 // $('html,body').animate({scrollTop: document.body.scrollHeight},"8000");
 
-// $(document).ready(function(){
-//   $('body,html').animate({scrollTop: document.body.scrollHeight}, 16000);
-// });
-$('.no-zoom').bind('touchend', function(e) {
-  e.preventDefault();
-  // Add your code here. 
-  $(this).click();
-  // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
-})
+$(document).ready(function(){
+  $('body,html').animate({scrollTop: document.body.scrollHeight - (window.screen.height + 50)}, 22000);
+});
+// $('.no-zoom').bind('touchend', function(e) {
+//   e.preventDefault();
+//   // Add your code here. 
+//   $(this).click();
+//   // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
+// })
+
