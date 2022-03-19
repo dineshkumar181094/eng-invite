@@ -398,7 +398,7 @@ header {
 }
 
 .home_intro {
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: 100%;
   position: relative;
@@ -1481,16 +1481,20 @@ header {
 .title0 {
   font: 300 16px/28px Roboto Condensed;
   color: rgba(255, 255, 255, 0.5);
+  font-size: large;
 }
 
 .title1 {
   font: 46px/48px Great Vibes;
+  font-size: x-large;
 }
 
 .title1_2 {
   text-indent: -15px;
   font: 52px/56px Great Vibes;
+  font-size: x-large;
 }
+
 .box{
   padding: 20px;
   background: rgb(34, 34, 34); /* for IE */
