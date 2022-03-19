@@ -190,7 +190,7 @@
 // $('html,body').animate({scrollTop: document.body.scrollHeight},"8000");
 
 $(document).ready(function(){
-  $('body,html').animate({scrollTop: document.body.scrollHeight - (window.screen.height + 150)}, 22000);
+  $('body,html').animate({scrollTop: document.body.scrollHeight - (window.screen.height)}, 22000);
 });
 // $('.no-zoom').bind('touchend', function(e) {
 //   e.preventDefault();
